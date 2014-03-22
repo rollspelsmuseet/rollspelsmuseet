@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='description' content='Rollspelsmuseet är ett öppet och modernt digitalt bibliotek för svensk rollspelshistoria.'>
+  <title>Rollspelsmuseet</title>
+  <%= stylesheet_link_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
