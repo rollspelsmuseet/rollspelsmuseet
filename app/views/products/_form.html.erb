@@ -1,0 +1,38 @@
+<%= stacked_form_for product do |f| %>
+  <div class="mb1">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.error_messages_for :name %>
+  </div>
+  <div class="mb1">
+    <%= f.label :producer %>
+    <%= f.text_field :producer %>
+    <%= f.error_messages_for :producer %>
+  </div>
+  <div class="mb1">
+    <%= f.label :publisher %>
+    <%= f.text_field :publisher %>
+    <%= f.error_messages_for :publisher %>
+  </div>
+  <div class="mb1">
+    <%= f.label :article_no %>
+    <%= f.text_field :article_no %>
+    <%= f.error_messages_for :article_no %>
+  </div>
+  <div class="mb1">
+    <%= f.label :isbn %>
+    <%= f.text_field :isbn %>
+    <%= f.error_messages_for :isbn %>
+  </div>
+  <div class="mb1">
+    <%= f.label :editorial %>
+    <%= f.text_area :editorial, rows: 5 %>
+    <%= f.error_messages_for :editorial %>
+  </div>
+  <div class="mb1">
+    <%= f.label :back_cover %>
+    <%= f.text_area :back_cover, rows: 5 %>
+    <%= f.error_messages_for :back_cover %>
+  </div>
+  <%= f.submit %>
+<% end %>

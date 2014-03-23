@@ -1,0 +1,12 @@
+<h1><%= t '.title' %></h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <%= link_to product.name, product %>
+      (<%= link_to 'redigera', edit_product_path(product) %>)
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Skriv in en ny produkt', new_product_path %>

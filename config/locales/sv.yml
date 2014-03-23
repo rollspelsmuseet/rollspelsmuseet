@@ -190,10 +190,27 @@ sv:
       long: ! '%e %B %Y %H:%M'
       short: ! '%e %b %H:%M'
     pm: ''
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  products:
+    index:
+      title: Produkter
+    new:
+      title: Skriv in ny produkt
+    edit:
+      title: Redigera %{model}
   activemodel:
     errors:
       <<: *errors
   activerecord:
     errors:
       <<: *errors
+    models:
+      product: Produkt
+    attributes:
+      product:
+        name: Namn
+        editorial: Ledare
+        back_cover: Baksida
+        producer: Producent
+        publisher: Utgivare
+        article_no: Artikelnummer
+        isbn: ISBN
